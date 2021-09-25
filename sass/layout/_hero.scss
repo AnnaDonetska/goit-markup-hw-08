@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   background-color: var(--hero-footer-background);
   text-align: center;
   color: var(--hero-txt-color);
@@ -12,17 +12,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  min-height: 400px;
 }
 
 .hero__title {
-  @include font(900, 44px, 1.36, 0.06em);
-  max-width: 696px;
+  @include font(900, 26px, 1.62, 0.06em);
+  max-width: 360px;
   margin: 0 auto 30px;
   text-align: center;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36, 0.06em);
+    max-width: 696px;
+  }
 }
+
 .hero__btn {
-  @include font(700, 16px, 1.87, 0.06em);
+  @include font(400, 16px, 1.87, 0.06em);
   text-align: center;
   padding: 10px 32px;
   cursor: pointer;
