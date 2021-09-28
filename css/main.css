@@ -207,10 +207,12 @@ ul {
 
 .hero {
   max-width: 1600px;
-  flex-grow: 1;
+  min-height: 400px;
   background-color: var(--hero-footer-background);
   text-align: center;
   color: var(--hero-txt-color);
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/imghero.jpg);
@@ -239,6 +241,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    display: block;
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -581,16 +584,28 @@ ul {
 }
 
 .client__item {
-  flex-basis: calc((100% - 180px) / 6);
+  flex-basis: calc((100% - 60px) / 2);
+  margin-top: 30px;
   margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .client__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  padding: 15px 0;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
