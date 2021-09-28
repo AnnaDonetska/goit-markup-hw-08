@@ -791,7 +791,7 @@ ul {
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 50px;
 }
 
@@ -905,14 +905,27 @@ ul {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 609px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -951,11 +964,12 @@ ul {
 }
 
 .title-form {
+  text-align: center;
   margin-bottom: 12px;
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--navigation-color-first);
 }
@@ -981,7 +995,6 @@ ul {
 
 .form-input {
   width: 100%;
-  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 40px;
@@ -1032,13 +1045,6 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.policy-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--text-color-p);
-}
-
 .check-label {
   justify-content: center;
   display: flex;
@@ -1047,10 +1053,18 @@ ul {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--text-color-p);
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-link {
