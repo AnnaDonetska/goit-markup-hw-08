@@ -138,16 +138,24 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item">
-
                     <picture>
-                        <source 
-                        srcset="./images/mobile/img.jpg 1x, 
-                        />
+                        <source srcset="./images/desktop/img.jpg 1x, ./images/desktop/img@2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x" media="(min-width:280px)" />
+                        <img src="./images/igor-d.jpg" alt="Игорь Демьяненко, дизайнер продукции" width="270">
                     </picture>
-                    <img 
-                    src="./images/igor-d.jpg" 
-                    alt="Игорь Демьяненко, дизайнер продукции"
-                    width="270">
+                   <!-- <picture > 
+                       <source 
+                        srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x"
+                       type="image/jpeg" 
+                       media="(min-width:320px)"> -->
+                       <!-- <source srcset="./images/mobile/img@2x.jpg 2x" type="image/jpeg" media="(min-width:320px)">
+                       <source srcset="./images/tablet/img.jpg 1x" type="image/jpeg" media="(min-width:768px)">
+                       <source srcset="./images/tablet/img@2x.jpg 2x" type="image/jpeg" media="(min-width:768px)">
+                       <source srcset="./images/desktop/img.jpg 1x" type="image/jpeg" media="(min-width:1200px)">
+                        <source srcset="./images/desktop/img@2x.jpg 2x" type="image/jpeg" media="(min-width:1200px)"> -->
+                    
+    
                    <div class="team__text">
                        <h3 class="team__title-name">Игорь Демьяненко</h3>
                     <p class="team__title-p" lang="en">Product Designer</p>
