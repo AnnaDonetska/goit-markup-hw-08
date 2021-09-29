@@ -18,8 +18,8 @@
 </head>
 <body>
     <!-- header -->
-<!-- <header class="header">
-    <div class="container">
+<header class="header">
+    <div class="container header__mobmenu">
         <nav class="header-navigation">
             <a class="logo-header link" href="./index.html" lang="en"><span
                     class="half-logo-text logo-text">Web</span>Studio</a>
@@ -49,9 +49,58 @@
                         </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button class="mobmenu__open" type="button" data-menu-open>
+                    <svg class="mobmenu__icon" width="24" height="16">
+                        <use href="./images/symbol-defs.svg#icon-menu_24px" ></use>
+                    </svg>
+
+                </button>
         </div>  
+        <div class="mobmenu " data-menu>
+            <div class="container">
+<button class="mobmenu__close" type="button" data-menu-close>
+    <svg class="mobmenu__icon-close" width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-close_24px" ></use>
+    </svg>
+</button>
+<ul class="mobmenu__list list">
+    <li class="mobmenu__item">
+       <a href="" class="mobmenu__link">Студия</a>
+    </li>
+    <li class="mobmenu__item">
+        <a href="" class="mobmenu__link">Портфолио</a>
+    </li>
+    <li class="mobmenu__item">
+        <a href="" class="mobmenu__link">Контакты</a>
+    </li>
+</ul>
+<div class="contacts-social">
+<ul class="mobmenu__contacts list">
+    <li class="mobmenu__contacts-item">
+        <a href="" class="mobmenu__contacts-link mobmenu__tel">+38 096 111 11 11</a>
+    </li>
+    <li class="mobmenu__contacts-item">
+        <a href="" class="mobmenu__contacts-link">info@devstudio.com</a>
+    </li>
+</ul>
+<ul class="mobmenu__social-list list">
+    <li class="mobmenu__social-item">
+        <a href="" class="mobmenu__social-link">Instagram</a>
+    </li>
+    <li class="mobmenu__social-item">
+        <a href="" class="mobmenu__social-link">Twitter</a>
+    </li>
+    <li class="mobmenu__social-item">
+        <a href="" class="mobmenu__social-link">Facebook</a>
+    </li>
+    <li class="mobmenu__social-item">
+        <a href="" class="mobmenu__social-link">LinkedIn</a>
+    </li>
+</ul>
+</div>
+        </div>
     </header>
-    <main> -->
+    <main>
         <!-- hero -->
         <section class="hero section">
             <div class="container container-hero">
@@ -180,8 +229,6 @@
                 </a>
             </li>
                        </ul>       
-                        
-                       
                     </div>
                 </li>
                 <li class="team__item">
@@ -506,6 +553,7 @@
 
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
