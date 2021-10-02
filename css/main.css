@@ -106,6 +106,7 @@ ul {
 .header-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -284,7 +285,7 @@ ul {
 }
 
 .menu-open,
-.mobmenu__close {
+.mobmenu-close {
   width: 40px;
   height: 40px;
   border: none;
@@ -308,7 +309,7 @@ ul {
   }
 }
 
-.mobmenu__close {
+.mobmenu-close {
   position: absolute;
   right: 15px;
   top: -37px;
@@ -324,31 +325,24 @@ ul {
 }
 
 .mobmenu {
-  z-index: 999;
+  z-index: 1;
   position: fixed;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: 0;
-  max-width: 480px;
   padding-top: 48px;
   padding-bottom: 48px;
-  width: 100vw;
-  height: 100vh;
   overflow: auto;
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
   pointer-events: auto;
 }
 
 .mobmenu.is-open {
-  opacity: 0;
+  opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .mobmenu .container {

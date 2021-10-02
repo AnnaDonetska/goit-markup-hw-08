@@ -61,7 +61,7 @@
         <!-- Mobile menu -->
         <div class="mobmenu is-open">
             <div class="container">
-<button type="button" class="mobmenu__close">
+<button type="button" class="mobmenu-close">
     <svg class="mobmenu__icon-close" width="18" height="18">
         <use href="./images/symbol-defs.svg#icon-close_24px" ></use>
     </svg>
@@ -102,6 +102,7 @@
 </ul>
 </div>
         </div> 
+        </div>
     </header>
     <main>
         <!-- hero -->
@@ -156,28 +157,29 @@
             <ul class="activity__list list">
                 <li class="activity__item">
                    <div class="activity__box"> 
-                       <img 
-                    src="./images/1.jpg" 
-                    alt="Написание программного обеспечения"
-                    width="370">
+                    <picture>
+                        <source srcset="./images/desktop/box1.jpg 1x, ./images/desktop/box@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/1.jpg" alt="Написание программного обеспечения" width="370">
+                    </picture>
                     <p class="activity__overlay">Десктопные приложения</p>
                    </div>
                 </li>
                 <li class="activity__item">
                     <div class="activity__box">
-                    <img 
-                    src="./images/2.jpg" 
-                    alt="Адаптация под мобильные устройства"
-                    width="370">
+                        <picture>
+                            <source srcset="./images/desktop/box2.jpg 1x, ./images/desktop/box2@2x.jpg 2x" media="(min-width:1200px)" />
+                            <img src="./images/2.jpg" alt="Адаптация под мобильные устройства" width="370">
+                        </picture>
                     <p class="activity__overlay">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="activity__item">
                     <div class="activity__box">
-                    <img 
-                    src="./images/3.jpg" 
-                    alt="Дизайнерские разработки"
-                    width="370">
+                        <picture>
+                            <source srcset="./images/desktop/box3.jpg 1x, ./images/desktop/box3@2x.jpg 2x" media="(min-width:1200px)" />
+                            <img src="./images/3.jpg" alt="Дизайнерские разработки" width="370">
+                        </picture>
+                   
                     <p class="activity__overlay">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -191,12 +193,14 @@
             <ul class="team__list list">
                 <li class="team__item">
                     <picture>
-                        <source srcset="./images/mobile/img.jpg 1x"                         />
+                        <source srcset="./images/desktop/img.jpg 1x, ./images/desktop/img@2x.jpg 2x" media="(min-width:1200px)" />
+                       
+                        <source srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg 2x" media="(min-width:768px)" />
+                        
+                        <source srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x" media="(min-width:280px)" />
+                        <img class="img" src="./images/igor-d.jpg" alt="Игорь Демьяненко, дизайнер продукции" width="270">
                     </picture>
-                    <img class="img"
-                    src="./images/igor-d.jpg" 
-                    alt="Игорь Демьяненко, дизайнер продукции"
-                    width="270">
+                    
                    <div class="team__text">
                        <h3 class="team__title-name">Игорь Демьяненко</h3>
                     <p class="team__title-p" lang="en">Product Designer</p>
@@ -235,10 +239,16 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="img"
-                    src="./images/olha-r.jpg"
-                    alt="Ольга Репина, фронтенд"
-                    width="270" >
+                    <picture>
+                       
+                        <source srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg 2x" media="(min-width:1200px)" />
+                        
+                        <source srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img1@2x.jpg 2x" media="(min-width:768px)" />
+                        
+                        <source srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img1@2x.jpg 2x" media="(min-width:280px)" />
+                        <img class="img" src="./images/olha-r.jpg" alt="Ольга Репина, фронтенд" width="270">
+                    </picture>
+                    
                     <div class="team__text"><h3 class="team__title-name">Ольга Репина</h3>
                     <p class="team__title-p" lang="en">Frontend Developer</p>
                     </div>
@@ -278,10 +288,17 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="img"
-                    src="./images/nikolay-t.jpg" 
-                    alt="Николай Тарасов, маркетинг" 
-                    width="270">
+                    <picture>
+                        
+                        <source srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg 2x" media="(min-width:1200px)" />
+                       
+                        <source srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img2@2x.jpg 2x" media="(min-width:768px)" />
+                        
+                        <source srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x" media="(min-width:280px)" />
+                        <img class="img" src="./images/nikolay-t.jpg" alt="Николай Тарасов, маркетинг" width="270">
+                    </picture>
+
+                    
                     <div class="team__text"><h3 class="team__title-name">Николай Тарасов</h3>
                     <p class="team__title-p" lang="en">Marketing</p>
                     </div>
@@ -321,10 +338,15 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="img"
-                     src="./images/mihail-e.jpg" 
-                    alt="Михаил Ермаков, дизайнер интерфейсов" 
-                    width="270">
+                    <picture>
+                       
+                        <source srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg 2x" media="(min-width:1200px)" />
+                        
+                        <source srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img3@2x.jpg 2x" media="(min-width:768px)" />
+                        
+                        <source srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x" media="(min-width:280px)" />
+                        <img class="img" src="./images/mihail-e.jpg" alt="Михаил Ермаков, дизайнер интерфейсов" width="270">
+                    </picture>
                    <div class="team__text"> <h3 class="team__title-name">Михаил Ермаков</h3>
                     <p class="team__title-p" lang="en">UI Designer</p>
                     </div>
