@@ -1,3 +1,7 @@
+.filter img {
+  max-width: 100%;
+  height: auto;
+}
 .filter-list {
   display: flex;
   margin-right: -8px;
@@ -13,11 +17,9 @@
     margin-bottom: 50px;
   }
 }
-
 .filter-item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  margin-top: 15px;
+  margin-right: 8px;
 }
 .filter-btn {
   @include font(500, 16px, 1.62, 0.03em);

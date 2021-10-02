@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <link rel="shortcut icon" href="#">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -26,10 +27,10 @@
                     class="half-logo-text logo-text">Web</span>Studio</a>
             <ul class="header-navigation__list list">
                 <li class="header-navigation__item">
-                    <a class="header-navigation__link link active-link" href="./index.html">Студия</a>
+                    <a class="header-navigation__link link" href="./index.html">Студия</a>
                 </li>
                 <li class="header-navigation__item">
-                    <a class="header-navigation__link link" href="./portfolio.html">Портфолио</a>
+                    <a class="header-navigation__link link active-link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="header-navigation__item">
                     <a class="header-navigation__link link" href="Контакты">Контакты</a>
@@ -62,49 +63,50 @@
 
     </div>
     <!-- Mobile menu -->
-    <div class="mobmenu">
-        <div class="container">
-            <button type="button" class="mobmenu-close">
-                <svg class="mobmenu__icon-close" width="18" height="18">
-                    <use href="./images/symbol-defs.svg#icon-close_24px"></use>
-                </svg>
-            </button>
-            <ul class="mobmenu__list list">
-                <li class="mobmenu__item">
-                    <a href="./index.html" class="mobmenu__link">Студия</a>
+<div class="mobmenu is-hidden">
+    <div class="mobmenu-container">
+        <button type="button" class="mobmenu-close">
+            <svg class="mobmenu__icon-close" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+        </button>
+        <ul class="mobmenu__list list">
+            <li class="mobmenu__item">
+                <a href="" class="mobmenu__link">Студия</a>
+            </li>
+            <li class="mobmenu__item">
+                <a href="./portfolio.html" class="mobmenu__link">Портфолио</a>
+            </li>
+            <li class="mobmenu__item">
+                <a href="" class="mobmenu__link">Контакты</a>
+            </li>
+        </ul>
+        <div class="contacts-social">
+            <ul class="mobmenu__contacts list">
+                <li class="mobmenu__contacts-item">
+                    <a href="" class="mobmenu__contacts-link mobmenu__tel">+38 096 111 11 11</a>
                 </li>
-                <li class="mobmenu__item">
-                    <a href="#" class="mobmenu__link">Портфолио</a>
-                </li>
-                <li class="mobmenu__item">
-                    <a href="" class="mobmenu__link">Контакты</a>
+                <li class="mobmenu__contacts-item">
+                    <a href="" class="mobmenu__contacts-link">info@devstudio.com</a>
                 </li>
             </ul>
-            <div class="contacts-social">
-                <ul class="mobmenu__contacts list">
-                    <li class="mobmenu__contacts-item">
-                        <a href="" class="mobmenu__contacts-link mobmenu__tel">+38 096 111 11 11</a>
-                    </li>
-                    <li class="mobmenu__contacts-item">
-                        <a href="" class="mobmenu__contacts-link">info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mobmenu__social-list list">
-                    <li class="mobmenu__social-item">
-                        <a href="" class="mobmenu__social-link ">Instagram</a>
-                    </li>
-                    <li class="mobmenu__social-item">
-                        <a href="" class="mobmenu__social-link">Twitter</a>
-                    </li>
-                    <li class="mobmenu__social-item">
-                        <a href="" class="mobmenu__social-link">Facebook</a>
-                    </li>
-                    <li class="mobmenu__social-item">
-                        <a href="" class="mobmenu__social-link">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="mobmenu__social-list list">
+                <li class="mobmenu__social-item">
+                    <a href="" class="mobmenu__social-link ">Instagram</a>
+                </li>
+                <li class="mobmenu__social-item">
+                    <a href="" class="mobmenu__social-link">Twitter</a>
+                </li>
+                <li class="mobmenu__social-item">
+                    <a href="" class="mobmenu__social-link">Facebook</a>
+                </li>
+                <li class="mobmenu__social-item">
+                    <a href="" class="mobmenu__social-link">LinkedIn</a>
+                </li>
+            </ul>
         </div>
+    </div>
+</div>
 </header>
 <main>
     <section class="filter section">
@@ -117,9 +119,7 @@
             <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
             <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
         </ul>
-    </div>
     <!-- projects -->
-        <div class="container">
         <ul class="projects-boxes list">
            
                 <li class="projects-item">
@@ -129,7 +129,7 @@
                             <source srcset="./images/desktop/portfolio1.jpg 1x, ./images/desktop/portfolio1@2x.jpg 2x" media="(min-width:1200px)"/>
                             <source srcset="./images/tablet/portfolio1.jpg 1x, ./images/tablet/portfolio1@2x.jpg 2x" media="(min-width:768px)" />
                             <source srcset="./images/mobile/portfolio1.jpg 1x, ./images/mobile/portfolio1@2x.jpg 2x" media="(min-width:280px)" />
-                            <img class="img" src="images/img-min.jpg" alt="Ноутбук с открытым веб-сайтом" Width="370">
+                            <img class="img" src="#" alt="Ноутбук с открытым веб-сайтом">
                         </picture>
                    
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -148,7 +148,7 @@
                                 <source srcset="./images/desktop/portfolio2.jpg 1x,./images/desktop/portfolio2@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio2.jpg 1x, ./images/tablet/portfolio2@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio2.jpg 1x, ./images/mobile/portfolio2@2x.jpg 2x" media="(min-width:280px)" />
-                                <img class="img" src="./images/img(1)-min.jpg" alt="Постер с двумя баскетболистами" Width="370">
+                                <img class="img" src="#" alt="Постер с двумя баскетболистами">
                             </picture>
                    
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -168,7 +168,7 @@
                                 <source srcset="./images/desktop/portfolio3.jpg 1x, ./images/desktop/portfolio3@2x.jpg 2x" media="(min-width:1200px)"/>
                                 <source srcset="./images/tablet/portfolio3.jpg 1x, ./images/tablet/portfolio3@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio3.jpg 1x, ./images/mobile/portfolio3@2x.jpg 2x" media="(min-width:280px)" />
-                            <img class="img" src="./images/img(2)-min.jpg" alt="Логотип ресторана Seafood" Width="370">
+                            <img class="img" src="#" alt="Логотип ресторана Seafood">
                             </picture>
                     
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -188,7 +188,7 @@
                                 <source srcset="./images/desktop/portfolio4.jpg 1x, ./images/desktop/portfolio4@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio4.jpg 1x, ./images/tablet/portfolio4@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio4.jpg 1x, ./images/mobile/portfolio4@2x.jpg 2x" media="(min-width:280px)" />
-                                <img class="img" src="./images/img(3)-min.jpg" alt="Черные наушники" Width="370">
+                                <img class="img" src="#" alt="Черные наушники" >
                             </picture>
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
@@ -207,7 +207,7 @@
                                 <source srcset="./images/desktop/portfolio5.jpg 1x, ./images/desktop/portfolio5@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio5.jpg 1x, ./images/tablet/portfolio5@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio5.jpg 1x, ./images/mobile/portfolio5@2x.jpg 2x" media="(min-width:280px)" />
-                                <img class="img" src="./images/img(4)-min.jpg" alt="Две коробки" Width="370">
+                                <img class="img" src="#" alt="Две коробки" >
                             </picture>
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
@@ -226,7 +226,7 @@
                                 <source srcset="./images/desktop/portfolio6.jpg 1x, ./images/desktop/portfolio6@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio6.jpg 1x, ./images/tablet/portfolio6@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio6.jpg 1x, ./images/mobile/portfolio6@2x.jpg 2x" media="(min-width:280px)" />
-                                <img class="img" src="./images/img(5)-min.jpg" alt="Дисплей с открытым веб-сайтом" Width="370">
+                                <img class="img" src="#" alt="Дисплей с открытым веб-сайтом" >
                             </picture>
                    
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -246,7 +246,7 @@
                                 <source srcset="./images/desktop/portfolio7.jpg 1x, ./images/desktop/portfolio7@2x.jpg 2x" media="(min-width:1200px)" /> 
                                 <source srcset="./images/tablet/portfolio7.jpg 1x, ./images/tablet/portfolio7@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio7.jpg 1x, ./images/mobile/portfolio7@2x.jpg 2x" media="(min-width:280px)" />
-                            <img class="img" src="./images/img(6)-min.jpg" alt="Открытый журнал" Width="370">
+                            <img class="img" src="#" alt="Открытый журнал" >
                             </picture>
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
@@ -266,7 +266,7 @@
                                 <source srcset="./images/desktop/portfolio8.jpg 1x, ./images/desktop/portfolio8@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio8.jpg 1x, ./images/tablet/portfolio8@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio8.jpg 1x, ./images/mobile/portfolio8@2x.jpg 2x" media="(min-width:280px)" />
-                                <img class="img" src="./images/img(7)-min.jpg" alt="Бирка с надписью" Width="370">
+                                <img class="img" src="#" alt="Бирка с надписью" >
                             </picture>
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
@@ -285,7 +285,7 @@
                                 <source srcset="./images/desktop/portfolio9.jpg 1x, ./images/desktop/portfolio9@2x.jpg 2x" media="(min-width:1200px)" />
                                 <source srcset="./images/tablet/portfolio9.jpg 1x, ./images/tablet/portfolio9@2x.jpg 2x" media="(min-width:768px)" />
                                 <source srcset="./images/mobile/portfolio9.jpg 1x, ./images/mobile/portfolio9@2x.jpg 2x" media="(min-width:280px)" />
-                            <img class="img" src="./images/img(8)-min.jpg" alt="Открытый ноутбук, руки человека на клавиатуре" Width="370">
+                            <img class="img" src="#" alt="Открытый ноутбук, руки человека на клавиатуре" >
                             </picture>
                     <p class="projects-overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
@@ -304,7 +304,7 @@
 
 </main>
     <footer class="footer section">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__box">
                 <div class="footer__logo-adress">
                     <a class="footer__logo link" href="./index.html" lang="en"><span
@@ -323,6 +323,7 @@
                         </ul>
                     </address>
                 </div>
+    
                 <div class="footer__social">
                     <h3 class="footer__social-title">присоединяйтесь</h3>
                     <ul class="footer__social-list list">
@@ -371,7 +372,7 @@
     
         </div>
     </footer>
-
+    <script src="./js/mobile-menu.js"></script>
 </body>
-<script src="./js/mobile-menu.js"></script>
+
 </html>
