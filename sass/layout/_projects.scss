@@ -72,7 +72,7 @@
 }
 
 .projects-boxes-text {
-  @include font(16px, 1.87, 0.03em);
+  @include font(400, 16px, 1.87, 0.03em);
   color: var(--text-color-p);
 }
 .text-box {
