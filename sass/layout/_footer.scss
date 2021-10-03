@@ -1,14 +1,15 @@
 .footer__container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 15px;
   text-align: center;
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
     text-align: left;
+    flex-wrap: nowrap;
   }
 }
-.footer__box {
+.address-social {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: baseline;
@@ -22,11 +23,8 @@
     margin-bottom: 0;
   }
 }
-
 .footer {
   background-color: var(--hero-footer-background);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer__logo {
   @include font(700, 24px, 1.16, 0.03em);
@@ -81,9 +79,6 @@
   color: var(--hero-txt-color);
   padding-bottom: 20px;
 }
-// .footer__social {
-//   margin-right: 93px;
-// }
 .footer__social-link {
   display: flex;
   justify-content: center;
@@ -113,10 +108,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-
-.footer__logo-adress,
-.footer__social {
+.footer__logo-adress {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -125,11 +121,7 @@
     margin-right: 70px;
   }
 }
-.footer-form {
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
+
 .footer__input {
   width: 100%;
   color: var(--primary-background-color);
@@ -155,7 +147,11 @@
     margin-bottom: 0;
   }
 }
-
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
 .footer__input-btn {
   @include font(700, 16px, 1.87, 0.06em);
   min-width: 200px;
@@ -182,34 +178,3 @@
 .footer__send {
   margin-left: 10px;
 }
-// min-width: 200px;
-//   background-color: var(--accent-color);
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-//   padding: 10px 28px;
-//   font-family: 'Roboto', sans-serif;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.88;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   color: var(--primary-background-color);
-//   cursor: pointer;
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   border: none;
-
-//   &:hover,
-//   &:focus {
-//     background-color: #188ce8;
-//   }
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-
-//     margin: 0 auto;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     display: inline-flex;
-//   }
